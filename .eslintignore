@@ -1,0 +1,5 @@
+/build/
+/config/
+/dist/
+/modules/*/dist/
+/node_modules/*

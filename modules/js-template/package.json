@@ -1,0 +1,18 @@
+{
+  "name": "@mc.gl/js-template",
+  "private": true,
+  "version": "0.1.0",
+  "description": "test",
+  "main": "dist/es5/index.js",
+  "module": "dist/esm/index.js",
+  "esnext": "dist/es6/index.js",
+  "scripts": {
+    "dev": "npx babel src --out-dir dist",
+    "prod": "webpack --config ../../build/webpack.config.prod.js",
+    "build-es6": "cross-env BABEL_ENV=es6 babel src --out-dir dist/es6 --source-maps --ignore 'node_modules/'",
+    "build-esm": "cross-env BABEL_ENV=esm babel src --out-dir dist/esm --source-maps --ignore 'node_modules/'",
+    "build-es5": "cross-env BABEL_ENV=es5 babel src --out-dir dist/es5 --source-maps --ignore 'node_modules/'",
+    "build": "npm run build-es6  && npm run build-esm && npm run build-es5"
+  },
+  "license": "MIT"
+}

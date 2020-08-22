@@ -1,0 +1,23 @@
+{
+  "version": "independent",
+  "command": {
+    "publish": {
+      "conventionalCommits": true,
+      "ignoreChanges": [
+        "test",
+        "*.md",
+        "js-template",
+        "vue-template",
+        "modules-test"
+      ],
+      "message": "chore(release): publish"
+    },
+    "bootstrap": {}
+  },
+  "npmClient": "yarn",
+  "useWorkspaces": true,
+  "packages": [
+    "modules/*",
+    "modules-test/*"
+  ]
+}
