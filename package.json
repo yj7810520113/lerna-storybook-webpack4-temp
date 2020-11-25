@@ -26,6 +26,7 @@
   "author": "tracert_it",
   "license": "MIT",
   "dependencies": {
+    "chromatic": "^5.4.0",
     "element-ui": "^2.10.1",
     "pbf": "^3.2.1",
     "probe.gl": "^3.0.3",

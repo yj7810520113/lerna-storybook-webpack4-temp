@@ -1,3 +1,4 @@
+import * as THREE from 'three'
 export { OrbitControls } from './controllers/control'
 export { MapState } from './controllers/map-controller'
 export {
@@ -9,3 +10,4 @@ export {
   EARTH_CIRCUMFERENCE
 } from './utils/constants'
 export { default as City } from './lib/city'
+export { THREE }
