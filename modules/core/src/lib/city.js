@@ -83,10 +83,16 @@ export default class City {
     this.earth = new Group()
     this.scene.add(this.earth)
     // this.earth.position.set(EARTH_CIRCUMFERENCE / 2, EARTH_CIRCUMFERENCE / 2, 0)
+    let canvas = document.createElement('canvas')
+    canvas.setAttribute('height', '100%')
+    canvas.setAttribute('width', '100%')
+    let context = canvas.getContext('webgl2')
+    this.domElement.appendChild(canvas)
     this.renderer = new WebGLRenderer({
-      canvas: this.domElement,
+      canvas: canvas,
       alpha: false,
-      antialias: true
+      antialias: true,
+      context: context
     })
     this.renderer.setSize(this.width, this.height)
     this.test()

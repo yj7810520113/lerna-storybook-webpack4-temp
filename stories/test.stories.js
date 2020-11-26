@@ -22,10 +22,6 @@ storiesOf('GoodsCategory', module)
     components: { mapControl },
     template: '<map-control></map-control>'
   }))
-  .add('primary', () => () => ({
-    components: { mapControl },
-    template: '<mapControl></mapControl>'
-  }))
   .add('danger', () => ({
     components: { mapControl },
     template: '<map-control></map-control>'

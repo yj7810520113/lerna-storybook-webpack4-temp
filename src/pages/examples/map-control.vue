@@ -1,11 +1,9 @@
 <!--  -->
 <template>
-  <div>
-    <canvas
-      :ref="'canvas'"
-      style="height:1000px;width:1000px;-webkit-user-select: none;pointer-events:auto;"
-    />
-  </div>
+  <div
+    :ref="'canvas'"
+    style="height:1000px;width:1000px;"
+  />
 </template>
 
 <script>

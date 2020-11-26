@@ -16,7 +16,8 @@
     "test:unit": "jest --config test/jest.config.js",
     "test": "npm run test:unit",
     "commit": "git-cz",
-    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -w -r 0"
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -w -r 0",
+    "chromatic": "npx chromatic --project-token 08nmnrp7way"
   },
   "private": true,
   "workspaces": [
