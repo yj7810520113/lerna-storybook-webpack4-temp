@@ -1,6 +1,5 @@
 import { addParameters,addDecorator,configure } from '@storybook/vue';
 import Vue from 'vue';
-import mapControl from '../src/pages/examples/map-control.vue'
 import { addReadme } from 'storybook-readme/vue';
 import { themes, create } from '@storybook/theming';
 // import { withNotes } from '@storybook/addon-notes'
@@ -29,7 +28,6 @@ addParameters({
     codeTheme: 'github',
   },
 });
-Vue.component('my-button', mapControl);
 addDecorator(addReadme);
 // addDecorator(withNotes)
 
